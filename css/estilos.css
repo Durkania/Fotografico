@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Dancing Script OT';
+    src: url('DancingScriptOT.eot');
+    src: url('DancingScriptOT.eot?#iefix') format('embedded-opentype'),
+        url('DancingScriptOT.woff2') format('woff2'),
+        url('DancingScriptOT.woff') format('woff'),
+        url('DancingScriptOT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #02010a;
+    font-family: 'Dancing Script OT';
+}
+.contenido{
+    display: block;
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+}
+header{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0 0;
+    color: #FFF;
+    padding: 10px;
+}
+h1{
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px #02010a;
+}
+.menu{
+    float: right;
+    margin: 10px;
+}
+.item{
+    border-bottom: solid 2px #fff;
+    color: #fff;
+    text-decoration: none;
+}
+.active{
+    border-bottom: none;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+.central{
+    background-color: #82c3a6;
+    padding: 30px;
+    text-align: center;
+}
+.secundaria{
+    background-color: #d5c75f;
+    border: solid 1px #d5c75f;
+    display: flex;
+    padding: 30px 15px;
+    text-align: center;
+}
+.img_central{
+    box-shadow: 2px 2px #02010a;
+    width: 100%;
+}
+.img_secundaria{
+    box-shadow: 2px 2px #02010a;
+    width: 100%;
+}
+img.img_secundaria{
+    border: solid 2px #02010a;
+    transition: 500ms;
+}
+.paisajes img.img_secundaria:hover{
+    border: solid 2px #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: rotate(10deg);
+    transition: 500ms;
+}
+.retratos img.img_secundaria:hover{
+    border: solid 2px #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate(20px,-5px);
+    transition: 500ms;
+}
+.paisajes{
+    padding: 0 15px;
+}
+.retratos{
+    margin:  0 15px;
+}
+.item_secundaria{
+    border-bottom: solid 2px #02010a;
+    color: #02010a;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.pie_pagina{
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    padding: 10px 30px;
+}
+.contacto,.terminos,.redes,.derechos{
+    width: 25%;
+}
+.redes_sociales a{
+    color: #02010a;
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .titulos{
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    }
+    .menu{
+    float: none;
+    margin: 10px;
+    text-align: center;
+    }
+    .secundaria{
+    background-color: #d5c75f;
+    border: solid 1px #d5c75f;
+    flex-direction: column;
+    text-align: center;
+    }
+    .retratos{
+    margin-top: 30px;
+    }
+    .pie_pagina{
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    }
+    .contacto,.terminos,.redes,.derechos{
+    width: 100%;
+    }
+}
